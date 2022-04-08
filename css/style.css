@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(209, 204, 140, 0.8) 0%,rgba(104, 156, 83, 0.8) 100%), url(/img/images/dices.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:  auto;
+    padding: 5px;
+    justify-content: center;
+    border: 5px solid rgb(117, 8, 190);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.title{
+    padding-top: 1.2rem;
+    text-align: center;
+    color:rgb(121, 21, 214)
+}
+
+.conatiner_players{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.container_player1,
+.container_player2{
+    width: 43%;
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+    border-radius: 7px;
+}
+
+h2 {
+    font-size: 35px;
+    padding-bottom: 2rem;
+}
+
+.points_glob{
+    font-size: 50px;
+    border: 3px solid rgb(117, 8, 190);
+    width: 55%;
+    margin:auto;
+}
+
+.points_temp {
+    font-size: 25px;
+    width: 55%;
+    margin:auto;
+    border: 3px solid rgb(117, 8, 190);
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
+.dice {
+    position: fixed;
+    width: 150px;
+    top:260px;
+    left: calc(50% - 77px);
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-1 {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+}
+  
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-1:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+button img ,
+button span {
+     display:inline-block;
+}
+
+button img {
+    margin-left: -80px;
+      margin-right: 10px;
+}
+
+button span {
+    position: absolute;
+    margin-top: 3px;
+}
+
+.new_game {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.container_buttons {
+    text-align: center;
+    display: none;
+}
+
+.gagnant {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+    /*   ========================================= */
+    /*               Media querys                  */
+    /*   ========================================= */
+
+
+@media screen and (max-width:800px){
+    .title{
+        font-family: 'Lato', sans-serif;
+        padding-top: 1rem;
+        font-size: 700;
+    }
+
+    .conatiner_players{
+        padding-bottom: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container_player1,
+    .container_player2    {
+        width: 45%;
+        text-align: center;
+        margin:0px;
+        padding: 0px;
+    }
+
+    .dice {
+        position: fixed;
+        width: 110px;
+        top:200px;
+        left: calc(50% - 57px);
+    }
+
+    h2 {
+        font-size: 30px;
+        padding-bottom: 1.5rem;
+    }
+
+    .points_glob{
+        font-size: 40px;
+    }
+
+    .points_temp {
+        font-size: 22px;
+        width: 50%;
+        margin:auto;
+        border: 3px solid rgb(117, 8, 190);
+    }
+
+    h4{
+        font-size: 16px;
+    }
+    
+    .custom-btn {
+        height: 30px;
+    }
+
+    button img {
+        margin-left: -80px;
+        margin-right: 10px;
+        margin-top: -6px;
+    }
+    button span {
+        position: absolute;
+        margin-top: -1px;
+    }
+    
+    .gagnant {
+        font-size: 28px;
+        margin-top: 15px;
+        padding-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    
+    .title{
+        padding-top: 0.8rem;
+    }
+
+    .conatiner_players{
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+
+    .points_glob{
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+    .points_temp {
+        font-size: 14px;
+        width: 55%;
+        margin:auto;
+        border: 3px solid rgb(117, 8, 190);
+    }
+
+    .dice {
+        position: fixed;
+        width: 75px;
+        top:200px;
+        left: calc(50% - 39px);
+    }
+
+    h4 {
+      font-size: 12px ;
+    }
+
+    .custom-btn {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    button img {
+        margin-left: -70px;
+        margin-right: 10px;
+        margin-top: -6px;
+    }
+
+    .gagnant {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+}

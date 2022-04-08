@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>player dice --- evaluation 2 SUDI  ---  Galo Gamboa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div >
+            <h1 class="title">Le jeu de dés</h1>
+        </div>
+        <div class="new_game" >
+            <button  id="new_game"   class="custom-btn btn-1">
+                <img src="img/icons/plus.svg"alt="">
+                <span>NEW GAME</span>
+            </button>
+        </div>
+        <div class="conatiner_players">
+            <div class=" container_player container_player1">
+                <div class="players">
+                    <h2 class="player1"> PLAYER 1</h2>
+                </div>
+                <div class="poinst_global">
+                    <p class="points_glob " id="points_glob1">0</p>
+                    <h4>SCORE</h4>
+                    <p class="points_temp "id="points_temp1">0</p>
+                    <h4>CURRENT</h4>
+                </div>
+            </div>
+            <div class=" container_player container_player2">
+                <div class="players">
+                    <h2 class="player2"> PLAYER 2</h2>
+                </div>
+                <div class="poinst_blobal">
+                    <p class="points_glob " id="points_glob2">0</p>
+                    <h4>SCORE</h4>
+                    <p class="points_temp " id="points_temp2">0</p>
+                    <h4>CURRENT</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class=" container_buttons">
+               <div>
+                    <button id="roll_dice" class="custom-btn btn-1 roll_dice">
+                        <img src="img/icons/change.svg"alt="">
+                        <span>ROLL DICE</span>
+                    </button>
+                </div>
+                <div>
+                    <button id="hold" class="custom-btn btn-1 hold">
+                        <img src="img/icons/save.svg"alt="">
+                        <span>HOLD</span>
+                    </button>
+            </div>
+               
+        </div>   
+
+                <h1 class="gagnant"></h1>
+        
+        <div class="container_dice">
+            <img id="dice" src="img/images/dice1.jpg" class="dice dice_1" alt="">
+        </div>
+    </div>
+    
+
+
+   <script src="js/main.js"></script>
+   
+      
+
+</body>
+</html>
