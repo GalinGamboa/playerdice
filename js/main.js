@@ -122,7 +122,7 @@ function game (){
 
         else {
             var dice1 = Math.floor(Math.random() * 6 + 1);
-            document.querySelector('.dice_1').setAttribute('src', `/img/images/dice${dice1}.jpg`)
+            document.querySelector('.dice_1').setAttribute('src', `img/images/dice${dice1}.jpg`)
             //  console.log(dice1)
            
             if (dice1!==1){
