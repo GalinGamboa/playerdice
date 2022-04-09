@@ -10,7 +10,7 @@
 .container {
     max-width: 1200px;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(209, 204, 140, 0.8) 0%,rgba(104, 156, 83, 0.8) 100%), url(/img/images/dices.jpg);
+    background-image: linear-gradient(to top, rgba(209, 204, 140, 0.8) 0%,rgba(104, 156, 83, 0.8) 100%), url(../img/images/dices.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin:  auto;
